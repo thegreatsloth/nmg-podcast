@@ -1,0 +1,98 @@
+.horse-headphones {
+  width: 100%;
+  max-width: 120px;
+}
+h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+.stream-icons a {
+  display: inline-block;
+  margin: 5px;
+}
+.jumbotron {
+  padding: 2rem 1rem;
+}
+
+.custom-nav {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: #013b78;
+  padding: 12px 0;
+  border-bottom: 8px solid #d22124;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.navigation-item.logo-item {
+  display: none;
+}
+.navigation-logo {
+  max-width: 250px;
+  width: 100%;
+}
+.navigation-item {
+  display: flex;
+}
+a.navigation-link {
+  color: white;
+  text-decoration: none;
+  align-self: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+.navigation-item {
+  position: relative;
+}
+ul.submenu {
+  display: none;
+  list-style-type: none;
+  background: #14214d;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  z-index: 99999;
+  width: 340px;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.submenu li a {
+  color: #fff;
+}
+.dropdown::after {
+  display: inline-block;
+  content: ">";
+  transform: rotate(90deg);
+}
+.submenu li {
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.submenu li a:hover {
+  text-decoration: underline;
+}
+.submenu li.sub a::before {
+  content: "-";
+}
+.sub {
+  padding-left: 20px;
+}
+
+.dropdown:hover + ul.submenu {
+  display: block;
+}
+ul.submenu:hover {
+  display: block;
+}
+.video-testimonial .container {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-item.logo-item {
+    display: flex;
+  }
+}
